@@ -20,7 +20,7 @@ export class App extends React.Component<{}, State> {
   }
 
   componentWillUnmount(): void {
-    document.addEventListener('keyup', this.handleKeyUp);
+    document.removeEventListener('keyup', this.handleKeyUp);
   }
 
   render() {
